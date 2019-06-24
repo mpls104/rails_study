@@ -19,6 +19,15 @@ open 0.0.0.0:3005
 After that, make sure to find Rails top page.
 
 
+# Rails 
+
+## Create Model
+bundle exec rails g model User name:string email:string token:string
+bundle exec rails db:migrate
+bundle exec rails g controller Users
+bundle exec rails g serializer User
+rake db:seed
+
 
 
 # TODO list about ruby on rails study
