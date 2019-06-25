@@ -47,6 +47,14 @@ Running via Spring preloader in process 375
 ### Get list of api
 rake routes
 
+## Preparation for GraphQL
+
+- gem 'graphql'
+- gem 'graphql-rails'
+- rails g graphql:install
+
+
+
 # TODO list about ruby on rails study
 
 - Try to create simple Rails app by performing rails new.
