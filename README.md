@@ -67,7 +67,7 @@ rake routes
 - Use cache
 - Stepping through code using pry.
 - Create simple REST API.
-- Create GraphQL API.
+- Create GraphQL API.(Query, Mutation, Subscription)
 - Try to handle gemfile about mongodb.
 
 # TODO list about Go & Grpc server
