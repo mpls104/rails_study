@@ -26,4 +26,10 @@ services:
       - "POSTGRES_PASSWORD=password"
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
-      
+
+  grpc:
+    build: ./grpc
+    volumes:
+      - 
+        ./grpc/src:/go/src/grpc-training/
+    entrypoint: /etc/services.sh
