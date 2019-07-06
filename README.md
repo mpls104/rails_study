@@ -38,6 +38,10 @@ Default
 Rspec
 
 rails generate rspec:install
+
+## Preparation of data
+FactoryGirl
+
 ```
 root@0af17fba35a1:/app/backend# rails g rspec:controller users           
 Running via Spring preloader in process 375

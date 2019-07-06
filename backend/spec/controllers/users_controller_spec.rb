@@ -1,14 +1,14 @@
-require 'rails_helper'
+require "rails_helper"
 
-RSpec.describe UsersController, type: :controller do
-  it 'Get API' do
-    id = 100
+RSpec.describe UsersController, :type => :controller do
+  describe "GET index" do
+    before do
+      @user = FactoryBot.create(:user)
+    end
 
-    get "/users/#{id}"
-    json = JSON.parse(response.body)
-    pp(json)
-
-    # リクエスト成功を表す200が返ってきたか確認する。
-    expect(response.status).to eq(404)
+    it "has a 200 status code" do
+      get :show, params: {id: @user::id}
+      expect(response.status).to eq(200)
+    end
   end
 end
